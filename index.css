@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --white: #ffffff;
+  --bg-color: #252525;
+  --primary-color: #1e90ff;
+  --secondary-color: #252525;
+  --green: #4caf50;
+  --red: #f44336;
+  --bg-color-second: #2e2b2e;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.logo-img{
+    width: 120px;
+    height: 60px;
+    margin-top: 5px;
+    margin-left: 3px;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--white);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+h1 {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 40px;
+  margin: 20px;
+}
+
+.container {
+  display: flex;
+}
+
+aside {
+    width: 250px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+  padding: 60px;
+  padding-top: 20px;
+  flex: 3;
+  background-color: var(--bg-color-second);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.latest-books {
+  display: flex;
+  gap: 50px;
+ 
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 18px;
+}
+
+table,
+th,
+td {
+  border: 2px solid grey;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  text-align: center;
+}
+
+
+.book-card {
+  background-color: #ffffff;
+  padding-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(33 29 33);
+  
+  width: 200px;
+  overflow: hidden;
+ 
+}
+
+
+
+.book-info {
+  padding: 15px;
+}
+
+.book-title {
+  font-size: 20px;
+  margin: 10px 0;
+  color: black
+}
+
+@media (max-width: 600px) {
+  .book-card {
+    max-width: 100%;
+    margin: 10px;
+  }
+
+  .book-info {
+    padding: 10px;
+  }
+}
+.recmnd{
+  background-color: #e9d8d8;
+height:290px;
+width: 800px;
+padding-left: 15px;
+border-radius: 7px;
+}
