@@ -23,13 +23,13 @@ function loadTableData() {
 
   latestBooksContainer.innerHTML = '';
   console.log(storedBooks);
-    if(books.length===0)
-    {    alert('Library Closed !!');
-        tableheader.style.display = 'none'; 
+    // if(books.length===0)
+    // {    alert('Library Closed !!');
+    //     tableheader.style.display = 'none'; 
        
-        tableBody.innerHTML = '<tr><td colspan="7" style="color: white; text-align: center;">Books Not Available!</td></tr>';  // Display the message with custom styling
+    //     tableBody.innerHTML = '<tr><td colspan="7" style="color: white; text-align: center;">Books Not Available!</td></tr>';  // Display the message with custom styling
         
-    }else {
+    // }else {
 
     var lastlength=books.length-4;
 
@@ -55,5 +55,5 @@ function loadTableData() {
             
             
         }}
-    )};
+    );
 }
